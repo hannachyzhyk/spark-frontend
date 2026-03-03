@@ -1,0 +1,16 @@
+@use 'primeicons/primeicons.css';
+@use "tailwindcss";
+@use "tailwindcss-primeui";
+@use "./colors.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 16px;
+    // font-family: "Golos Text", sans-serif;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--p-surface-100);
+}
