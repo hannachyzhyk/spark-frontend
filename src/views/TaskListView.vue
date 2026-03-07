@@ -34,6 +34,7 @@
 import { onMounted, ref } from 'vue'
 import mocks from '../mocks';
 import { formatDate } from '../utils/format';
+import taskService from '../services/taskService'
 
 const props = defineProps<{
   title: string;
@@ -41,6 +42,8 @@ const props = defineProps<{
 const model = defineModel<Task[]>();
 
 onMounted(async () => {
+  const tasks = await taskService.getTasks();
+  console.log(tasks);
 })
 
 </script>

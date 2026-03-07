@@ -12,15 +12,18 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Avatar: typeof import('primevue/avatar')['default']
+    Button: typeof import('primevue/button')['default']
     Card: typeof import('primevue/card')['default']
     Chart: typeof import('primevue/chart')['default']
     Column: typeof import('primevue/column')['default']
     copy: typeof import('./src/components/TaskListCard copy.vue')['default']
     DataTable: typeof import('primevue/datatable')['default']
     Divider: typeof import('primevue/divider')['default']
+    IftaLabel: typeof import('primevue/iftalabel')['default']
     InputText: typeof import('primevue/inputtext')['default']
     Menu: typeof import('primevue/menu')['default']
     Menubar: typeof import('primevue/menubar')['default']
+    Password: typeof import('primevue/password')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TaskListCard: typeof import('./src/components/TaskListCard.vue')['default']
