@@ -16,7 +16,6 @@ declare module 'vue' {
     Card: typeof import('primevue/card')['default']
     Chart: typeof import('primevue/chart')['default']
     Column: typeof import('primevue/column')['default']
-    copy: typeof import('./src/components/TaskListCard copy.vue')['default']
     DataTable: typeof import('primevue/datatable')['default']
     Divider: typeof import('primevue/divider')['default']
     IftaLabel: typeof import('primevue/iftalabel')['default']
