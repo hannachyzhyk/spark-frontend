@@ -43,10 +43,12 @@ onMounted(async () => {
 
 let register = async () => {
 
-
+  if(!username.value || !password.value || !confirmPassword.value) {
+    return;
+  }
 
   AuthService.register(username.value, password.value).then(() => {
-    userStore.isAuthenticated = true;
+    // userStore.isAuthenticated = true;
     router.push('/tasks')
   }).catch((error) => {
     console.error(error);

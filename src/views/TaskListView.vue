@@ -39,7 +39,7 @@ import taskService from '../services/taskService'
 const props = defineProps<{
   title: string;
 }>();
-const model = defineModel<Task[]>();
+const model = defineModel<any[]>();
 
 onMounted(async () => {
   const tasks = await taskService.getTasks();
